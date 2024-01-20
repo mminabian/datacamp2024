@@ -22,7 +22,7 @@ in terminal
     --port=5432 \
     --db=ny_taxi \
     --table_name=green_taxi_trips \
-    --url=${URL}
+    --url=${URL}  
     note: this approch only create table and ingest for green_taxi_trips
 ### To connect to pgadmin and run query
  http://localhost:8080/browser/
