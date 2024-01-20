@@ -1,1 +1,1 @@
-# zoomcamp2024
+# datacamp2024
