@@ -103,8 +103,19 @@ The goal of this project is to set up a PostgreSQL container for the New York Ta
             order by max_tip desc
             ```
 
-7. **To Gracefully Shut Down and Clean Up Resources Created by `docker-compose up`:**
+7. **To Persist pgAdmin Configuration:**
+    - To persist the configuration in pgAdmin even after stopping and starting the Docker Compose, a volume is used to store the pgAdmin data. 
+    - In the `docker-compose.yml` file for pgAdmin container, the following is added:
+        ```yaml
+        volumes:
+          - ./pgadmin_data:/var/lib/pgadmin
+        ```
+    - This volume ensures that the pgAdmin configuration data is stored, and it will persist across container restarts.
+
+    - **Note:**
+        - If you do not use a volume to store pgAdmin data, every time after stopping and starting the Docker Compose, you will need to register the server and set up the connection configuration in pgAdmin again.
+
+8. **To Gracefully Shut Down and Clean Up Resources Created by `docker-compose up`:**
     ```bash
     docker-compose down
     ```
-

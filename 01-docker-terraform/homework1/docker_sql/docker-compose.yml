@@ -14,5 +14,9 @@ services:
     environment:
       - PGADMIN_DEFAULT_EMAIL=admin@admin.com 
       - PGADMIN_DEFAULT_PASSWORD=root
+    volumes:
+      - ./pgadmin_data:/var/lib/pgadmin
     ports:
       - "8080:80"
+      # To persist the configuration in pgAdmin even after stopping and starting the Docker Compose,
+      #  we used  a volume to store the pgAdmin data. 
