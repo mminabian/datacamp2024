@@ -133,7 +133,7 @@ dmypy.json
 mage_ai/server/data/files/**
 default_repo
 instance_metadata.json
-# ~/.mage_data
+~/.mage_data
 
 # test notebook
 test.ipynb
@@ -167,7 +167,8 @@ node_modules
 
 # Scratch files
 scratch*
+/mage_data*
 *secrets*.json
 magic-zoomcamp
 *.json
-.DS_Store
+
