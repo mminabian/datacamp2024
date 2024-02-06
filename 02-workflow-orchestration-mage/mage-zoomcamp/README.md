@@ -1,4 +1,4 @@
-# Mage Project 2 
+# Mage week2 Project 
 
 The goal is to construct an ETL pipeline that loads data, performs transformations, and writes the data to a database (and Google Cloud!).
 
@@ -21,7 +21,7 @@ The goal is to construct an ETL pipeline that loads data, performs transformatio
 **Instructions:**
 
 - Clone this repository to your local machine.
-- Navigate to the repository: `cd mage-data-engineering-zoomcamp`.
+- Navigate to the repository: `cd datacamp2024/ 02-workflow-orchestration-mage/mage-zoomcamp`.
 - Rename `dev.env` to `.env`.
 - Build the Docker container: `docker compose build`.
 - Start the Docker container: `docker compose up`.
@@ -46,7 +46,7 @@ The goal is to construct an ETL pipeline that loads data, performs transformatio
   - `load_api_green_taxi_data.py` to get green taxi data from the source URL.
   - `test_postgres.sql` to test connection to PostgreSQL.
   - `load_green_taxi_data_from_postgres.sql`, which can be used later to get `vendor_id` from `green_taxi` in PostgreSQL.
-- The pipeline has the `transformer_green_taxi_data.py` to perform the required transformation in this assignment on green taxi data.
+- The pipeline has the `transformer_green_taxi_data.py` to perform the required transformation in this project on green taxi data.
 - The pipeline has two data exporters:
   - `green_taxi_data_to_postgres.py` to export the transformed data to PostgreSQL.
   - `green_taxi_data_to_gcs_partioned_parquet.py` to write transformed green taxi data as Parquet files to a bucket in GCP, partitioned by `lpep_pickup_date`.
