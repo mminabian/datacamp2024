@@ -1,0 +1,9 @@
+# created by virtualenv automatically
+
+# Ignore virtual environment
+venv/
+
+# Ignore JSON files
+*.json
+.DS_Store
+.idea
