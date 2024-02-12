@@ -1,0 +1,6 @@
+
+*.json
+.DS_Store
+.idea
+.ipynb_checkpoints/
+*.wal
