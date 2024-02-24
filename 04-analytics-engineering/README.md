@@ -79,7 +79,14 @@ Additionally, a continuous integration job is set up to automatically trigger `d
 
 To remove duplications for FHV trips, uncomment line 23 in `04-analytics-engineering/taxi_ride_ny/models/staging/stg_fhv_tripdata.sql`. This step ensures that the FHV trips data undergoes the necessary deduplication process during the dbt build.
 
-## Google Looker Studio Reports 
+## Google Looker Studio Reports
+
+### Trips Analysis for Green and Yellow Taxis (2019-2020)
+Description: This report provides a comprehensive analysis of trips for Green and Yellow Taxis for the years 2019 and 2020.
+
 ![Trips Analysis for Green and Yellow Taxis (2019-2020)](https://github.com/mminabian/datacamp2024/blob/main/04-analytics-engineering/trips_analysis_green_and_yellow_taxi.png)
 
-![Trips Analysis for Green Taxi,Yellow Taxis and FHV trips (2019)](https://github.com/mminabian/datacamp2024/blob/main/04-analytics-engineering/trips_per_month__green_yellow_fhv.png)
+### Trips Analysis for Green Taxi, Yellow Taxis, and FHV trips (2019)
+Description: This report presents an overview of trips, including Green Taxi, Yellow Taxis, and For-Hire Vehicle (FHV) trips specifically for the year 2019.
+
+![Trips Analysis for Green Taxi, Yellow Taxis, and FHV trips (2019)](https://github.com/mminabian/datacamp2024/blob/main/04-analytics-engineering/trips_per_month__green_yellow_fhv.png)
