@@ -75,3 +75,11 @@ Use dbt Cloud and Cloud IDE to create models, fact tables, dimension tables, and
   --vars '{"is_test_run": "false"}'
 A nightly job is configured to run dbt every night at 12.
 Additionally, a continuous integration job is set up to automatically trigger `dbt build` when a pull request is submitted. If all checks pass successfully, it allows the merge process to proceed. This setup is crucial for preventing potential production disruptions in case of any code issues.
+### Removing Duplications for FHV Trips
+
+To remove duplications for FHV trips, uncomment line 23 in `04-analytics-engineering/taxi_ride_ny/models/staging/stg_fhv_tripdata.sql`. This step ensures that the FHV trips data undergoes the necessary deduplication process during the dbt build.
+
+## Google Looker Studio Reports 
+![Trips Analysis for Green and Yellow Taxis (2019-2020)](https://github.com/mminabian/datacamp2024/blob/main/04-analytics-engineering/trips_analysis_green_and_yellow_taxi.png)
+
+![Trips Analysis for Green Taxi,Yellow Taxis and FHV trips (2019)](https://github.com/mminabian/datacamp2024/blob/main/04-analytics-engineering/trips_per_month__green_yellow_fhv.png)
