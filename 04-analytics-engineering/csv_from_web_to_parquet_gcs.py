@@ -145,7 +145,6 @@ def main():
                                                                                "account JSON file")
     parser.add_argument("--gcs-bucket-name", default="nyc_taxi_data_trip", help="Name of the Google Cloud Storage "
                                                                                 "bucket")
-
     args = parser.parse_args()
 
     for year in args.year:
