@@ -1,0 +1,12 @@
+*.json
+.DS_Store
+.idea
+.ipynb_checkpoints
+*.wal
+*.parquet
+data/
+fhv/
+zones/
+spark-warehouse
+*.csv
+*.csv.gz
